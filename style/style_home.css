@@ -1,0 +1,72 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    height: 40%;
+}
+
+.container,
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container form {
+    width: 80%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container form .form-line#pattern {
+    color: grey;
+}
+
+.container form .form-line:not(#pattern) {
+    color: rgb(222, 49, 99);
+    font-weight: bold;
+}
+
+.container form .form-line {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container {
+    border: solid rgb(222, 49, 99) 3px;
+    border-radius: 1rem;
+}
+
+input[type=submit]#localizar,
+legend {
+    background-color: rgb(222, 49, 99);
+    border: solid white 2px;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+}
+
+input[type=submit]#localizar {
+    width: 5rem;
+}
+
+form .form-line input[type=text],
+form .form-line input[type=password] {
+    outline: none;
+    border-style: none none solid none;
+    transition: all 1s;
+}
+
+form .form-line input[type=text]:focus,
+form .form-line input[type=password]:focus {
+    border-color: rgb(222, 49, 99);
+    transform: scaleX(1.1) translateX(1rem);
+}
+
+input[type=submit]#localizar:hover {
+    background-color: white;
+    border: solid rgb(222, 49, 99) 2px;
+    color: rgb(222, 49, 99);
+}

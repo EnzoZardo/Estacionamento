@@ -1,0 +1,74 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset,
+.container form,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid rgb(222, 49, 99) 3px;
+    border-radius: 0.3rem;
+}
+
+legend,
+input[type=submit]#entrar {
+    background-color: rgb(222, 49, 99);
+    border: solid white 2px;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+}
+
+input[type=submit]#entrar {
+    width: 5rem;
+}
+
+input[type=submit]#entrar:hover {
+    background-color: white;
+    border: solid rgb(222, 49, 99) 2px;
+    color: rgb(222, 49, 99);
+}
+
+form .form-line input[type=text],
+form .form-line input[type=password] {
+    outline: none;
+    border-style: none none solid none;
+    transition: all 1s;
+}
+
+form .form-line input[type=text]:focus,
+form .form-line input[type=password]:focus {
+    border-color: rgb(222, 49, 99);
+    transform: scaleX(1.1);
+}
+
+.container form {
+    width: 90%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container form .form-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    width: 40%;
+    height: 30%;
+    justify-content: space-evenly;
+}
